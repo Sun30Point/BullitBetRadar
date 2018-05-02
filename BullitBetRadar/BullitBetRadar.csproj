@@ -214,6 +214,52 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\magnific-popup.css" />
+    <Content Include="Content\css\popuo-box.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\style5.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\a1.jpg" />
+    <Content Include="Content\images\a2.jpg" />
+    <Content Include="Content\images\a3.jpg" />
+    <Content Include="Content\images\abt-1.jpg" />
+    <Content Include="Content\images\abt-2.jpg" />
+    <Content Include="Content\images\abt-3.jpg" />
+    <Content Include="Content\images\ba2.jpg" />
+    <Content Include="Content\images\c1.jpg" />
+    <Content Include="Content\images\c2.jpg" />
+    <Content Include="Content\images\c3.jpg" />
+    <Content Include="Content\images\c4.jpg" />
+    <Content Include="Content\images\c5.jpg" />
+    <Content Include="Content\images\c6.jpg" />
+    <Content Include="Content\images\c7.jpg" />
+    <Content Include="Content\images\c8.jpg" />
+    <Content Include="Content\images\c9.jpg" />
+    <Content Include="Content\images\ch1.jpg" />
+    <Content Include="Content\images\ch2.jpg" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\cnt.ab.jpg" />
+    <Content Include="Content\images\gif.png" />
+    <Content Include="Content\images\icon.png" />
+    <Content Include="Content\images\icons.svg" />
+    <Content Include="Content\images\img-sprite.png" />
+    <Content Include="Content\images\marker.png" />
+    <Content Include="Content\images\menu.png" />
+    <Content Include="Content\images\next.png" />
+    <Content Include="Content\images\play.png" />
+    <Content Include="Content\images\prev.png" />
+    <Content Include="Content\images\to-top1.png" />
+    <Content Include="Content\images\video-bg.jpg" />
+    <Content Include="Content\images\video-img.jpg" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\easing.js" />
+    <Content Include="Content\js\jquery.magnific-popup.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\modernizr.custom.97074.js" />
+    <Content Include="Content\js\move-top.js" />
+    <Content Include="Content\js\nivo-lightbox.min.js" />
+    <Content Include="Content\js\responsiveslides.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -223,6 +269,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\BullitBetRadar - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\BullitBetRadar20180416101750 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -246,7 +298,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -268,6 +319,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Typography.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

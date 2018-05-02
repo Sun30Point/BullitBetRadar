@@ -26,5 +26,23 @@ namespace BullitBetRadar.Controllers
 
             return View();
         }
+
+        public ActionResult Gallery()
+        {
+
+            return View();
+        }
+
+        public ActionResult Services()
+        {
+
+            return View();
+        }
+
+        public ActionResult Typography()
+        {
+
+            return View();
+        }
     }
 }

@@ -1,45 +1,142 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title – приложение ASP.NET</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Rugby Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- js -->
+    <script src="~/Content/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Content/js/move-top.js"></script>
+    <script type="text/javascript" src="~/Content/js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!--pop-up-box-->
+    <link href="~/Content/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/Content/js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <!--pop-up-box-->
 
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("О программе", "About", "Home")</li>
-                    <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-top">
+                    <div class=" header-top-left">
+                        <p>24/7 Support : <span>010-25418796</span></p>
+                    </div>
+                    <div class=" header-top-right">
+                        <select class="drop-down drop-down-in">
+                            <option value="1">English</option>
+                            <option value="2">French</option>
+                            <option value="3">German</option>
+                        </select>
+                        <div class="clearfix"> </div>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
             </div>
         </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="header-bottom-top">
+                    <div class="logo">
+                        @Html.ActionLink("Rugby", "Index")<h1>Rugby</h1>
+                    </div>
+                    <div class="top-nav">
+                        <span class="menu"><img src="~/Content/images/menu.png" alt=""> </span>
+
+                        <ul>
+                            <li class="active">@Html.ActionLink("Home", "Index")</li>
+                            <li>@Html.ActionLink("About", "About")</li>
+                            <li>@Html.ActionLink("Services", "Services")</li>
+                            <li>@Html.ActionLink("Typography", "Typography")</li>
+                            <li>@Html.ActionLink("Gallery", "Gallery")</li>
+                            <li>@Html.ActionLink("Mail", "Contact")</li>
+                        </ul>
+                        <script>
+                            $("span.menu").click(function () {
+                                $(".top-nav ul").slideToggle(500, function () {
+                                });
+                            });
+    </script>
+
+    </div>
+
+    <div class="clearfix"> </div>
+    </div>
+    </div>
+    </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
-        </footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-bottom-at">
+                    <div class="col-md-6 footer-grid">
+                        <h3>Rugby</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-md-6 footer-grid-in">
+                        <ul class="footer-nav">
+                            <li>@Html.ActionLink("Home", "Index")|</li>
+                            <li>@Html.ActionLink("About", "About")|</li>
+                            <li>@Html.ActionLink("Services", "Services")|</li>
+                            <li>@Html.ActionLink("Typography", "Typography")|</li>
+                            <li>@Html.ActionLink("Gallery", "Gallery")|</li>
+                            <li>@Html.ActionLink("Mail", "Contact")|</li>
+                        </ul>
+                        <p class="footer-class"> © 2015 Rugby . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!---->
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+                    var defaults = {
+                        containerID: 'toTop', // fading element id
+                        containerHoverID: 'toTopHover', // fading element hover id
+                        scrollSpeed: 1200,
+                        easingType: 'linear'
+                    };
+
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+                });
+            </script>
+            <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+            <!---->
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
+    </body>
 </html>
